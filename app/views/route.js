@@ -2,7 +2,9 @@ import { NextResponse } from 'next/server'
 import OpenAI from 'openai'
 
 // System prompt for the AI, providing gubidelines on how to respond to users
-const systemPrompt = "Assist and solve Verizon customer issues efficiently and empathetically." // Use your own system prompt here
+const systemPrompt = "You are an AI developed to support CUNY's \"Essential Needs for Student Success\" initiative. Your role is to enhance digital and mobile strategies that improve student access to essential resources. Focus on:\n" +
+    "\n" +
+    "Awareness and Outreach: Suggest methods for using digital platforms and social media to increase student awareness of services like financial aid and counseling.." // Use your own system prompt here
 
 // Define the POST request handler
 export const POST = async (req) => {
